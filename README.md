@@ -33,4 +33,4 @@ $ `./startnode02`
 
 $ `./gethattach.sh`
 
-> `admin.addPeer('enode://<enode address of node01>2@127.0.0.1:30312')``
+<console> `admin.addPeer('enode://<enode address of node01>2@127.0.0.1:30312')``
