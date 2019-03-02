@@ -19,6 +19,7 @@ $ `geth --datadir node02/ account new`
 
 ### Initialzie nodes
 $ `geth --datadir node01/ init genesis.json`
+
 $ `geth --datadir node02/ init genesis.json`
 
 ### Start node01
@@ -34,6 +35,7 @@ In geth console: `admin.addPeer('enode://<enode address of node02>2@127.0.0.1:30
 
 ## Installing web3
 $ `cd ..`
+
 $ `npm install --save`
 
 ## Deploying the contracts
