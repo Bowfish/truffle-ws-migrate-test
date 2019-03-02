@@ -40,3 +40,9 @@ $ `npm install --save`
 
 ## Deploying the contracts
 $ `truffle migrate --reset --network poadevnet`
+
+## Reproducing the Error: connection not open on send()
+
+When the last two functions of the contract SimpleStorage are commented out, then the deployment works. As soon as only one of the functions will be added to the contract again the deployment fails. I figured out that it doesn't matter what kind of function will be added.
+
+To reproduce the error delete the comment marks which comment out the last two functions.
