@@ -34,3 +34,5 @@ $ `./startnode02`
 $ `./gethattach.sh`
 
 In geth console: `admin.addPeer('enode://<enode address of node02>2@127.0.0.1:30312')`
+
+## Setup of poadevnet
