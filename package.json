@@ -1,0 +1,25 @@
+{
+  "name": "truffle-ws-migrate-test",
+  "version": "1.0.0",
+  "description": "Test for truffle websocket migration",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bowfish/truffle-ws-migrate-test.git"
+  },
+  "author": "Bowfish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bowfish/truffle-ws-migrate-test/issues"
+  },
+  "homepage": "https://github.com/Bowfish/truffle-ws-migrate-test#readme",
+  "dependencies": {
+    "web3": "^1.0.0-beta.37"
+  }
+}
