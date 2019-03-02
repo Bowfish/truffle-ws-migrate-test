@@ -5,6 +5,8 @@ Test for truffle websocket migration
 ## Setup of poadevnet
 
 ### Create accounts
+$ `cd poadevnet`
+
 $ `geth --datadir node01/ account new`
 
 - Save the address in accounts.txt
@@ -31,6 +33,7 @@ $ `./gethattach.sh`
 In geth console: `admin.addPeer('enode://<enode address of node02>2@127.0.0.1:30312')`
 
 ## Installing web3
+$ `cd ..`
 $ `npm install --save`
 
 ## Deploying the contracts
