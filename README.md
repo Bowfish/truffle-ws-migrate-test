@@ -5,31 +5,41 @@ Test for Truffle websocket migration
 ## Setup of poadevnet
 
 ### Create accounts
-$ `cd poadevnet`
-
-$ `geth --datadir node01/ account new`
+```
+$ cd poadevnet
+$ geth --datadir node01/ account new
+```
 
 - Save the address in accounts.txt
 - Save the password in node01/password.txt
 
-$ `geth --datadir node02/ account new`
+```
+$ geth --datadir node02/ account new
+```
 
 - Save the address in accounts.txt
 - Save the password in node02/password.txt
 
 ### Initialzie nodes
-$ `geth --datadir node01/ init genesis.json`
-
-$ `geth --datadir node02/ init genesis.json`
+```
+$ geth --datadir node01/ init genesis.json
+$ `geth --datadir node02/ init genesis.json
+```
 
 ### Start node01
-$ `./startnode01`
+```
+$ ./startnode01.sh
+```
 
 ### Start node02
-$ `./startnode02`
+```
+$`./startnode02.sh
+```
 
 ### Add node2 to node1
-$ `./gethattach.sh`
+```
+$ ./gethattach.sh
+```
 
 In geth console: 
 ```
@@ -46,12 +56,15 @@ in geth console:
 with: `clique.getSigners()` you will get the list of all authorized signers
 
 ## Installing web3
-$ `cd ..`
-
-$ `npm install --save`
+```
+$ cd ..
+$ npm install --save
+```
 
 ## Deploying the contracts
-$ `truffle migrate --reset --network poadevnet`
+```
+$ truffle migrate --reset --network poadevnet
+```
 
 ## Reproducing the Error: connection not open on send()
 
