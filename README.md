@@ -1,6 +1,6 @@
 # truffle-ws-migrate-test
 
-Test for truffle websocket migration
+Test for Truffle websocket migration
 
 ## Setup of poadevnet
 
@@ -32,13 +32,15 @@ $ `./startnode02`
 $ `./gethattach.sh`
 
 In geth console: 
-`admin.addPeer('enode://<enode address of node02>2@127.0.0.1:30312')`
+```bash
+> admin.addPeer('enode://<enode address of node02>2@127.0.0.1:30312')
 
 ### Add signers
 in geth console: 
-`clique.propose('<address of account 1>', true)`
-
-`clique.propose('<address of account 2>', true)`
+```bash
+> clique.propose('<address of account 1>', true)
+> clique.propose('<address of account 2>', true)
+```
 
 with: `clique.getSigners()` you will get the list of all authorized signers
 
