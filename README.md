@@ -32,12 +32,13 @@ $ `./startnode02`
 $ `./gethattach.sh`
 
 In geth console: 
-```bash
+```
 > admin.addPeer('enode://<enode address of node02>2@127.0.0.1:30312')
+```
 
 ### Add signers
 in geth console: 
-```bash
+```
 > clique.propose('<address of account 1>', true)
 > clique.propose('<address of account 2>', true)
 ```
