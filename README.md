@@ -33,7 +33,7 @@ $ ./startnode01.sh
 
 ### Start node02
 ```
-$`./startnode02.sh
+$ ./startnode02.sh
 ```
 
 ### Add node2 to node1
@@ -55,7 +55,7 @@ in geth console:
 
 with: 
 ```
-clique.getSigners()
+> clique.getSigners()
 ```
 you will get the list of all authorized signers
 
