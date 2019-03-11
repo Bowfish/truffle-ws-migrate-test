@@ -23,7 +23,7 @@ $ geth --datadir node02/ account new
 ### Initialzie nodes
 ```
 $ geth --datadir node01/ init genesis.json
-$ `geth --datadir node02/ init genesis.json
+$ geth --datadir node02/ init genesis.json
 ```
 
 ### Start node01
@@ -53,7 +53,11 @@ in geth console:
 > clique.propose('<address of account 2>', true)
 ```
 
-with: `clique.getSigners()` you will get the list of all authorized signers
+with: 
+```
+clique.getSigners()
+```
+you will get the list of all authorized signers
 
 ## Installing web3
 ```
