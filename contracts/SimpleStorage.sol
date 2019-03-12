@@ -239,8 +239,7 @@ contract SimpleStorage is Mortal, Pausable, Administrable {
     return(proposalIds[_index]);
   }
 
-  //* Uncommen this and then the migration will fail
-  /*
+  //* Uncomment this and then the migration will fail 
   function getProposal(address _proposalId) public view returns(uint index, bytes32 hash, address topic, address sender, bool status) {
     require(isProposal(_proposalId), "getProposal: Invalid Proposal Id. Proposal does not exist");
     return (
@@ -261,6 +260,4 @@ contract SimpleStorage is Mortal, Pausable, Administrable {
     proposalIds.length--;
     emit LogPoaDeleteProposal(_proposalId);
   }
-  */
-
 }
