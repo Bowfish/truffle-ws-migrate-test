@@ -50,7 +50,7 @@ Or: Create a file static-nodes.json with the following content:
 ```
 [
   "enode://<enode address of node01>@127.0.0.1:30312",
-  "enode://<enode address of node02>@127.0.0.1:30312",
+  "enode://<enode address of node02>@127.0.0.1:30312"
 ]
 ```
 
