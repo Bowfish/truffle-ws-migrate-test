@@ -43,7 +43,15 @@ $ ./gethattach.sh
 
 In geth console: 
 ```
-> admin.addPeer('enode://<enode address of node02>2@127.0.0.1:30312')
+> admin.addPeer('enode://<enode address of node02>@127.0.0.1:30312')
+```
+
+Or: Create a file static-nodes.json with the following content:
+```
+[
+  "enode://<enode address of node01>@127.0.0.1:30312",
+  "enode://<enode address of node02>@127.0.0.1:30312",
+]
 ```
 
 ### Add signers
